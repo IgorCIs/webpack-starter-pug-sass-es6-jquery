@@ -70,7 +70,7 @@ module.exports = env => {
           test: /\.sass$/,
           use: [
             env === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader, // creates style nodes from JS strings
-            { loader: 'css-loader', options: { importLoaders: 1, minimize: true, sourceMap: true, colormin: false } }, // translates CSS into CommonJS
+            { loader: 'css-loader', options: { importLoaders: 1, minimize: false, sourceMap: true, colormin: false } }, // translates CSS into CommonJS
             'postcss-loader',
             'sass-loader', // compiles Sass to CSS
           ],
@@ -79,7 +79,10 @@ module.exports = env => {
           test: /\.pug$/,
           use: [
             {
-              loader: 'pug-loader'
+              loader: 'pug-loader',
+              options: {
+                pretty: true
+              }
             }
           ]
         },

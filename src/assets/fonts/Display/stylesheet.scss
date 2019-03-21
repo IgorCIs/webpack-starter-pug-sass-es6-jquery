@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./../fonts/Display/PlayfairDisplay-Bold.eot');
+    src: url('./../fonts/Display/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Display/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('./../fonts/Display/PlayfairDisplay-Bold.woff') format('woff'),
+        url('./../fonts/Display/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('./../fonts/Display/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./../fonts/Display/PlayfairDisplay-Black.eot');
+    src: url('./../fonts/Display/PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Display/PlayfairDisplay-Black.woff2') format('woff2'),
+        url('./../fonts/Display/PlayfairDisplay-Black.woff') format('woff'),
+        url('./../fonts/Display/PlayfairDisplay-Black.ttf') format('truetype'),
+        url('./../fonts/Display/PlayfairDisplay-Black.svg#PlayfairDisplay-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+$fair: 'Playfair display'

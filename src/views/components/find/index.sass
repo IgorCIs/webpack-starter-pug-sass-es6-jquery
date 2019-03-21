@@ -1,16 +1,59 @@
 .find
-  min-height: 100vh
   background: #242424  
-  padding-top: 40px
+
+  &_page
+    @extend %page
+    padding: 40px 0
 
   &_wrapper
+    padding: 15px
     @extend .wrapper
   
-  &_contacts
-    width: 50%  
-
   &_map
     width: 50%
 
   .btn
     @extend %button
+
+  &_contacts
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: calc(50% - 30px)
+    padding: 0 15px
+    display: flex
+    background: url('./../../views/components/find/bg.png')
+    background-position: 50% 40%
+    background-repeat: no-repeat
+  
+    &_text
+      text-align: center
+      font-size: 18px
+      font-weight: 700
+      font-family: $fair
+      font-weight: bold
+      letter-spacing: 0.1em;
+
+
+    &_address
+      margin-top: 12px
+      color: $white
+    
+    &_tel
+      margin-top: 12px
+      display: block
+      color: $white
+
+    &_buttons
+      display: flex
+      justify-content: center
+      width: 100%
+      margin: 40px 0 40px -20px
+      
+      .btn
+        margin-left: 20px
+
+    &_socials
+      justify-content: center
+      display: flex
+    

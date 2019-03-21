@@ -1,6 +1,6 @@
 .find
   .container
-    h2.about_page
+    h2.find_page
       span.number 08
       span.text как найти   
 
@@ -16,9 +16,10 @@
           .btn Перейти в магазин
       
         .find_contacts_socials
-          .fb.ig
-          .fb.fb
-        
+          a(href="#").i.fb
+            include ./../../../assets/images/fb.svg
+          a(href="#").i.ig
+            include ./../../../assets/images/ig.svg
 
       .find_map
         #map

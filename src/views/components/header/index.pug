@@ -2,7 +2,7 @@
   .container
     .wrapper
       .header_logo
-        img(src='./../../../assets/images/logo.svg', alt="")
+        img(src=require('./../../../assets/images/logo.svg'), alt="")
 
       nav.header_menu
         each item in require('./data.js').default
