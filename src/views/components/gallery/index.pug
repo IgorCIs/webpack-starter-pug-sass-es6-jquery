@@ -1,0 +1,25 @@
+.gallery
+  .gallery_wrapper
+    .swiper-container#slider
+      .swiper-wrapper
+        .swiper-slide.gallery_item
+          img(src=require('./img/img.png'), alt="")
+        .swiper-slide.gallery_item 
+          img(src=require('./img/img.png'), alt="")
+        .swiper-slide.gallery_item 
+          img(src=require('./img/img.png'), alt="")
+
+      .swiper-pagination
+      .swiper-scrollbar
+
+    .gallery_content
+      .container.gallery_content_wrapper 
+        h2.gallery_page
+          span.number 06 
+          span.text галерея
+
+        .gallery_border
+          img(src=require('./img/border.png'), alt="")
+
+          .swiper-button-prev.gallery_button.gallery_button__prev
+          .swiper-button-next.gallery_button.gallery_button__next

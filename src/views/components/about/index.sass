@@ -1,0 +1,75 @@
+.about
+  padding: 45px 0 100px
+  background: #242424  
+
+  &_page
+    @extend %page
+
+  &_content
+    margin-top: 50px
+    
+  &_text
+    width: calc(50% - 20px)
+    display: inline-block
+
+    &_title
+      @extend %title
+
+
+    p
+      margin-top: 35px
+      font-size: em(18)
+
+
+  &_pic
+    display: inline-block
+    width: calc(50% - 20px + -5px)
+    margin-left: 40px
+    vertical-align: top
+    position: relative
+    
+    &_img
+      top: -10px
+      bottom: -10px
+      left: -10px
+      bottom: -10px
+      right: -10px 
+      z-index: 0
+      position: absolute
+      overflow: hidden
+      img
+        z-index: 1
+        height: 100%
+
+    
+    &_bg
+      z-index: 2
+      position: relative
+      justify-content: center
+      align-items: center
+      display: flex
+      img
+        width: 100%
+
+.what
+  background: $gold
+  color: $black
+
+  .about
+    &_page
+      &:after
+        background: $black
+
+    &_text_title
+      color: inherit
+
+    &_btn
+      margin-top: 55px
+
+      .btn
+        max-width: 100px
+        @extend %button
+        @extend %button-black
+
+    &_pic
+      margin: 0 40px 0 0

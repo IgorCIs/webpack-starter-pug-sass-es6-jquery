@@ -1,0 +1,57 @@
+.promo
+  min-height: 100vh
+  background: #c4b188
+  color: $black
+  .container
+    min-height: inherit
+    max-height: inherit
+    flex-direction: column
+    display: flex
+  
+  &_page
+    @extend %page
+    padding: 40px 0
+    &:after
+      background: $black
+
+  &_wrapper
+    @extend .wrapper
+    flex: 1 0
+
+  &_item
+    width: calc(33% - 15px)
+    padding-bottom: 40px
+    display: flex
+    flex-direction: column
+    text-align: center
+    min-height: 400px
+
+    &_wrapper
+      display: flex
+      flex: 1 0
+      background: $black
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      display: flex
+
+    &_icon
+      color: $gold
+      justify-content: center
+      align-items: center
+      display: flex
+      width: 66px
+      height: 66px
+      position: relative
+    
+      +before
+        @extend %cover
+        position: absolute
+        border: 1px solid $gold
+        transform: rotate(45deg)
+
+    &_name
+      text-transform: uppercase
+      color: $white
+      font-size: em(18)
+      margin-top: 40px

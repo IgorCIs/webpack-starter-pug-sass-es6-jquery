@@ -20,20 +20,6 @@ html(lang='en')
       meta(name='keywords', content='index, page')
       meta(name='author' content='')
 
-    //- Twitter
-    meta(name='twitter:card', content='summary')
-    meta(name='twitter:site', content='')
-    meta(name='twitter:image', content='')
-    meta(name='twitter:description', content='')
-
-    //- Facebook
-    meta(property='og:url', content='')
-    meta(property='og:title', content='')
-    meta(property='og:description', content='')
-    meta(property='og:image', content='')
-    meta(property='og:type', content='website')
-
-
     //- Favicons
     link(rel='apple-touch-icon', sizes='180x180', href=require('images/favicons/apple-touch-icon.png'))
     link(rel='icon', type='image/png', sizes='32x32', href=require('images/favicons/favicon-32x32.png'))
@@ -41,10 +27,10 @@ html(lang='en')
     link(rel='shortcut icon', href=require('images/favicons/favicon.ico'))
 
     //- Preload fonts
-    link(type='font/woff', href=require('source/assets/fonts/Quicksand-Bold.woff'), rel='preload', as='font', crossorigin)
-    link(type='font/woff', href=require('source/assets/fonts/Quicksand-Medium.woff'), rel='preload', as='font', crossorigin)
-    link(type='font/woff', href=require('source/assets/fonts/Quicksand-Regular.woff'), rel='preload', as='font', crossorigin)
-    link(type='font/woff', href=require('source/assets/fonts/Quicksand-Light.woff'), rel='preload', as='font', crossorigin)
+    //- link(type='font/woff', href=require('source/assets/fonts/Quicksand-Bold.woff'), rel='preload', as='font', crossorigin)
+    //- link(type='font/woff', href=require('source/assets/fonts/Quicksand-Medium.woff'), rel='preload', as='font', crossorigin)
+    //- link(type='font/woff', href=require('source/assets/fonts/Quicksand-Regular.woff'), rel='preload', as='font', crossorigin)
+    //- link(type='font/woff', href=require('source/assets/fonts/Quicksand-Light.woff'), rel='preload', as='font', crossorigin)
 
     //- Title
     block title
@@ -56,7 +42,6 @@ html(lang='en')
       meta(name='msapplication-config' content='./browserconfig.xml')
 
   body
-
     //- block content
     block content
 

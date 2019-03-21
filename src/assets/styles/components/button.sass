@@ -1,0 +1,43 @@
+%button
+  padding: 17px 50px
+  text-align: center
+  border: 2px solid $gold
+  font-weight: 700
+  cursor: pointer
+  color: $white
+  position: relative
+  font-size: em(12)
+  font-family: $monts
+  display: block
+  transition: all .3s
+  +tap
+    &:after
+      left: 10px
+      right: 10px
+      top: 5px
+      bottom: 5px
+
+  +hover
+    background: $gold
+
+  +after
+    border: 1px solid rgba($gold, 0.5)
+    transition: all .3s
+    left: 5px
+    background: rgba($gold, 0.1)
+    right: 5px
+    top: -5px + -2px
+    bottom: -5px + -2px
+    position: absolute
+
+
+  &-black
+    color: $black
+    border-color: black
+
+    +hover
+      background: $black
+      color: $white
+    
+    &:after
+      border-color: black

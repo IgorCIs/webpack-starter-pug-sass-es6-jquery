@@ -1,0 +1,17 @@
+.header
+  .container
+    .wrapper
+      .header_logo
+        img(src='./../../../assets/images/logo.svg', alt="")
+
+      nav.header_menu
+        each item in require('./data.js').default
+          .header_menu_item
+            a(href=item.href)=item.name
+
+      .header_links
+        a(href="#").header_btn Перейти в магазин
+        a(href="#").i.fb
+          include ./../../../assets/images/fb.svg
+        a(href="#").i.ig
+          include ./../../../assets/images/ig.svg

@@ -1,0 +1,34 @@
+.banner 
+  min-height: 100vh
+  background: url('./../../views/components/banner/bg.png') 
+  background-size: cover
+  background-position: 50% 50%
+  color: $gold
+
+  .container, &_wrapper
+    min-height: inherit
+
+  &_wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+  
+  &_logo
+    width: em(200)
+    height: em(200)
+    img
+      width: 100%
+      height: 100%
+
+  &_title
+    height: 70px
+    margin-top: 33px
+    svg
+      height: 100%
+
+  &_btn
+    margin-top: 50px
+    @extend %button
+    &:after
+      background: unset

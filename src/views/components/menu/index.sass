@@ -1,0 +1,51 @@
+.menu
+  min-height: 100vh
+  background: url('../../views/components/menu/bg.gif') black
+  background-size: cover
+  background-position: 50% 50%
+  position: relative
+  +before
+    @extend %cover
+    position: absolute
+    background: rgba($black, 0.5)
+
+  &_page
+    top: 0
+    left: 0
+    position: absolute
+    padding-top: 40px
+    @extend %page
+
+  &_wrapper, .container
+    min-height: inherit
+    
+  &_wrapper 
+    position: relative
+    justify-content: center
+    align-items: center
+    display: flex 
+    flex-direction: column
+
+  &_title
+    text-align: center
+    @extend %title
+
+  &_text
+    font-size: em(18)  
+    margin-top: 25px
+    text-align: center
+    p
+      margin: 0 
+  
+  &_links
+    display: flex
+    margin-left: -25px
+    margin-top: 45px
+
+  &_link
+    @extend %button
+    margin-left: 25px
+    min-width: 100px
+
+.club
+  background-image: url('../../views/components/menu/bg2.gif')
