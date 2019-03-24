@@ -9,22 +9,21 @@
     margin-top: 50px
     
   &_text
-    width: calc(50% - 20px)
     display: inline-block
 
     &_title
       @extend %title
 
-
     p
       margin-top: 35px
       font-size: em(18)
 
-
   &_pic
     display: inline-block
-    width: calc(50% - 20px + -5px)
     margin-left: 40px
+    float: right
+    width: 50%
+    margin-bottom: 15px
     vertical-align: top
     position: relative
     
@@ -41,7 +40,6 @@
         z-index: 1
         height: 100%
 
-    
     &_bg
       z-index: 2
       position: relative
@@ -51,6 +49,29 @@
       img
         width: 100%
 
+  +media($media-sm)
+    &_pic
+      width: calc(100% - 10px)
+      margin: 0 0 25px 0
+
+  +media($media-xs)
+    padding: 15px 0
+
+    &_content
+      margin-top: 15px + 10px
+
+    &_pic
+      margin: 0 10px 15px 0
+      max-width: calc(100% - 20px)
+
+    &_text_title
+      margin-bottom: 20px
+
+    p
+      margin: 10px 0
+    
+
+      
 .what
   background: $gold
   color: $black
@@ -63,13 +84,35 @@
     &_text_title
       color: inherit
 
+    &_pic
+      float: left
+      margin-right: 45px 
+      margin-left: 10px
+  
     &_btn
       margin-top: 55px
+      display: flex
 
       .btn
-        max-width: 100px
         @extend %button
         @extend %button-black
 
-    &_pic
-      margin: 0 40px 0 0
+    +media($media-md)
+      &_pic
+        margin-top: 25px
+        margin-right: 30px
+
+      &_text
+        &_title
+          font-size: 45px
+
+    +media($media-xs)
+      &_pic
+        margin: 0 0 15px 10px
+        max-width: calc(100% - 20px)
+
+      &_text_title
+        font-size: em(40)
+        
+      &_btn
+        margin: 25px 0 15px

@@ -79,3 +79,23 @@
 
 
     
+  +media($media-sm)
+    &_border
+      img
+        display: none
+
+
+  +media($media-xs)
+    &_page
+      margin-top: 15px    
+
+    &_button
+      $size: 8vw
+      width: $size
+      height: $size
+
+      &__prev
+        left: 0
+
+      &__next
+        right: 0

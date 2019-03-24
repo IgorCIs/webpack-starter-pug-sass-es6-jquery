@@ -33,7 +33,7 @@
 
 
 %page
-    font-size: em(12)
+    font-size: 12px
     text-transform: uppercase
     align-items: center
     display: flex
@@ -58,6 +58,8 @@
     font-weight: 900
     font-family: $fair
     line-height: em(20)
+    +media($media-xs)
+        font-size: em(40)
 
 %border
     background: url('./../images/border.svg')

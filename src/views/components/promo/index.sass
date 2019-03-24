@@ -60,3 +60,23 @@
       font-weight: bold
       font-size: em(18)
       margin-top: 40px
+
+  +media($media-sm)
+    &_wrapper
+      flex-direction: column
+  
+    &_item
+      width: 100%
+      margin: unset
+      min-height: unset
+
+      &_wrapper
+        padding: 100px 0
+
+
+  +media($media-xs)
+    &_item
+      padding-bottom: 15px
+
+    &_page
+      padding: 20px 0
