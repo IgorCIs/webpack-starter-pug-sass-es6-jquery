@@ -1,3 +1,5 @@
+import mapstyle from './map'
+
 const Find = () => {
   const key = 'AIzaSyDjKYt8XbEsvj857b6vmjbJKvmvLq2dbzU';
   const src = 'https://maps.googleapis.com/maps/api/js?key=' + key;
@@ -20,7 +22,7 @@ const Find = () => {
               zoom: 17,
               disableDefaultUI: true,
               center: pos,
-              styles: require('./map').default
+              styles: mapstyle
           });
 
           new google.maps.Marker({
@@ -28,12 +30,10 @@ const Find = () => {
               map: map
           });
 
-          const setHeight = () => {
-            console.log(mapEl.offsetWidth)
-            mapEl.style.height = mapEl.offsetWidth + 'px'
-          }
-    
+          const setHeight = () => mapEl.style.height = mapEl.offsetWidth + 'px'
+          
           setHeight()
+          
           window.addEventListener('resize', setHeight)
       }      
 

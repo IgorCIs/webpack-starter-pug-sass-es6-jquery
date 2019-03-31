@@ -1,7 +1,7 @@
 export default [
   {
     name: 'кто мы',
-    href: '#who'
+    href: '#about'
   },
   {
     name: 'меню',

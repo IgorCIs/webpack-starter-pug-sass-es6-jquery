@@ -1,4 +1,4 @@
-.header
+.header(data-trigger-self='header')
   .container
     .wrapper
       .header_logo
@@ -7,7 +7,8 @@
       nav.header_menu
         each item in require('./data.js').default
           .header_menu_item
-            a(href=item.href)=item.name
+            a(href=item.href data-trigger-target='header')=item.name
+
 
       .header_links
         a(href="#").header_btn Перейти в магазин
@@ -15,3 +16,8 @@
           include ./../../../assets/images/fb.svg
         a(href="#").i.ig
           include ./../../../assets/images/ig.svg
+
+      .header_burger(data-trigger-target='header')
+        div
+        div
+        div

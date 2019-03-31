@@ -1,8 +1,9 @@
 .menu#club.club
+  include ./popup
   .container
     .menu_wrapper
       h2.menu_page
-        span.number 04 
+        span.number 05
         span.text Закрытый клуб абсентеистов
 
       h3.menu_title Закрытый клуб <br> абсентеистов
@@ -11,4 +12,11 @@
         p  Гости ZELDA могут попробовать более 30 видов абсента «La Louche»
       
       .menu_links
-        .menu_link Подробнее
+        .menu_link(data-popup-target='#clubpopup') Подробнее
+
+    
+  a(href="#what").section-scroll
+    <svg width="13" height="26" viewBox="0 0 13 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.2782 25.5991H0L10.2766 1.55408L0.927488 1.51091V0L12.3912 0.0431715L2.11468 24.0882H11.2782V25.5991Z" fill="#242424"/>
+      <path d="M9.46033 13.5969H2.63403V12.0873H9.46033V13.5969Z" fill="#"/>
+    </svg>

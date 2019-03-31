@@ -1,6 +1,9 @@
 .about
   padding: 45px 0 100px
-  background: #242424  
+  background: url('./../../views/components/about/bg.png') #242424 
+  background-position-y: 100%
+  background-size: cover
+
 
   &_page
     @extend %page
@@ -16,7 +19,10 @@
 
     p
       margin-top: 35px
-      font-size: em(18)
+      font-size: em(16)
+      letter-spacing: 0.08em      
+      line-height: 22px
+
 
   &_pic
     display: inline-block
@@ -65,7 +71,7 @@
       max-width: calc(100% - 20px)
 
     &_text_title
-      margin-bottom: 20px
+      margin-bottom: 2тзь0px
 
     p
       margin: 10px 0
@@ -73,8 +79,11 @@
 
       
 .what
-  background: $gold
   color: $black
+  background: url('./../../views/components/what/bg.png') $gold 
+  
+  background-position: 100% 0
+
 
   .about
     &_page
@@ -116,3 +125,5 @@
         
       &_btn
         margin: 25px 0 15px
+
+

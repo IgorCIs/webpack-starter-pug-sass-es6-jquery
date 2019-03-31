@@ -4,6 +4,7 @@
   background-size: cover
   background-position: 50% 50%
   color: $gold
+  position: relative
 
   .container, &_wrapper
     min-height: inherit
@@ -32,3 +33,103 @@
     @extend %button
     &:after
       background: unset
+
+  .section-scroll
+    bottom: -50px
+    left: 50%
+    transform: translateX(-50%)
+    position: absolute
+    background: #242424  
+  
+  +media($media-xs)
+    &_title
+      height: 10vw
+
+.section-scroll
+  width: 100px
+  justify-content: center
+  align-items: center
+  display: flex
+  border-radius: 50%
+  cursor: pointer
+  height: 100px
+  +media($media-xs)
+    display: none
+
+
+.club
+  position: relative
+  .section-scroll
+    background: $gold
+    bottom: -50px
+    left: 50%
+    transform: translateX(-50%)
+    position: absolute
+
+
+
+body .order-popup
+  // max-width: 300px
+  width: unset
+  padding: 50px 30px
+  background-image: url('./../../views/components/find/bg.png')
+  background-size: 70%
+  background-position: 50% 30%
+  background-repeat: no-repeat
+
+  
+  form
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    display: flex
+
+    &>div
+      margin-top: 20px
+  
+  .btn
+    margin-top: 40px
+    .button
+      @extend %button
+
+
+.input
+  flex-direction: column
+  
+  display: flex
+
+  label
+    margin-bottom: 2px
+    
+  input
+    color: $gold
+    background: rgba($black, 0)
+    text-transform: uppercase
+    padding: 15px
+    border: 1px solid $gold
+    border-radius: 2px
+    &::placehoder
+      color: $white
+      
+
+    &.fail
+      border-color: red
+      background: rgba(red, 0.2)
+
+  
+
+
+.sended
+  
+  .status-sended
+    display: block
+    color: $gold
+
+.error
+  .status-error
+    display: block
+    color: red
+  
+.status
+  display: none
+

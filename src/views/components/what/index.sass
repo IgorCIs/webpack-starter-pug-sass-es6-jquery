@@ -1,0 +1,43 @@
+.page-popup
+  width: 80%
+  background: #242424
+  border: 1px solid $gold
+  color: $white
+  padding: 20px 
+
+  .content
+    flex-wrap: wrap
+    display: flex
+
+  &_img
+    width: 50%
+    img
+      width: 100%
+    
+    float: left
+    margin: 0 20px 20px 0
+
+  &_text
+    font-weight: 300
+
+  +media($media-md)
+    max-height: 100%
+    overflow-y: scroll
+    padding: 40px 30px 20px 
+
+    &_img
+      width: 100%
+      margin: 0 0 10px 0
+      float: unset
+
+  .close
+    right: 15px
+    top: 15px
+    width: 20px
+    cursor: pointer
+    height: 20px
+    position: absolute
+
+    
+  +media($media-xs)
+    width: 90%

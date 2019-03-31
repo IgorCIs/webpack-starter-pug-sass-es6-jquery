@@ -1,0 +1,17 @@
+.popup#order.page-popup.order-popup
+  form
+    .input
+      label() Ваше имя
+      input(type='text' name='name')
+
+    .input
+      label() Ваш номер телефона
+      input(type='tel' name='tel')
+
+    .status.status-sended Отправленно
+    .status.status-error Ошибка
+  
+    .btn
+      .button Отправить
+
+  .close(data-popup-close="all")

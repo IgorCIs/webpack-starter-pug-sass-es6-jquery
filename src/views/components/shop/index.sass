@@ -1,0 +1,50 @@
+.shop
+  color: $black
+  padding: 30px 0
+  background: url('./../../views/components/what/bg.png') $gold 
+  background-position: 50% 50%
+  
+
+  &_text
+    flex: 1 0
+
+  &_title
+    @extend %title
+    font-size: em(30)
+    color: $black
+
+  &_button
+    display: flex
+    margin-left: 20px
+    justify-content: flex-start
+    align-items: center
+    flex-direction: column
+
+    a
+      position: relative
+      right: -10px
+      margin-top: -7px
+      max-width: 200px
+      display: block
+      
+      @extend %button
+      @extend %button-black
+
+
+
+  &_content
+    flex-wrap: wrap
+    display: flex
+
+  +media($media-md)
+    &_button
+      justify-content: center
+
+  +media($media-xs)
+
+    &_button
+      margin-top: 30px
+      margin-left: 0
+      width: 100%
+      a
+        right: unset

@@ -1,3 +1,4 @@
+include ./popup
 .banner
   include ./../header/index
   .container
@@ -7,4 +8,11 @@
       h1.banner_title 
         include text.svg
 
-      .banner_btn Забронировать
+      a(href="#" data-popup-target='#order').banner_btn Забронировать
+
+
+      a(href="#about").section-scroll
+        <svg width="13" height="26" viewBox="0 0 13 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.2782 25.5991H0L10.2766 1.55408L0.927488 1.51091V0L12.3912 0.0431715L2.11468 24.0882H11.2782V25.5991Z" fill="#C4B188"/>
+          <path d="M9.46033 13.5969H2.63403V12.0873H9.46033V13.5969Z" fill="#C4B188"/>
+        </svg>

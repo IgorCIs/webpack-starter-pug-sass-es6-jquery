@@ -1,12 +1,12 @@
-.promo
+.promo#promo
   .container
     h2.promo_page
-      span.number 07
+      span.number 08
       span.text акции
     
     .promo_wrapper
       each item in [['Акции', 'название акции'], ['Акции', 'название акции'], ['Акции','Название акции']] 
         .promo_item
-          .promo_item_wrapper 
+          .promo_item_wrapper(style=`background-image: url(${require('./bg1.png')})`)
               .promo_item_icon=item[0]
               .promo_item_name=item[1]

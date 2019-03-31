@@ -44,8 +44,28 @@
 
   &_link
     @extend %button
+    justify-content: center
+    align-items: center
+    display: flex
     margin-left: 25px
     min-width: 100px
+
+  +media($media-xs)
+    &_text
+      margin-top: 20px
+  
+    &_links
+      justify-content: center
+      margin-top: 5px
+      align-items: center
+      flex-direction: column
+
+    &_link
+      width: 100%
+      margin-top: 20px
+  
+    &_page
+      padding: 15px 0
 
 .club
   background-image: url('../../views/components/menu/bg2.gif')

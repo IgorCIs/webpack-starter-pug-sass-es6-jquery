@@ -1,16 +1,36 @@
 .find
   background: #242424  
-
+  padding-bottom: 50px 
   &_page
     @extend %page
     padding: 40px 0
 
   &_wrapper
-    padding: 15px
+    background-size: cover
+    margin: 15px 15px 0 15px
+    border: 1px solid $gold
+    +media($media-md)
+      border: unset
     @extend .wrapper
+    position: relative
+    +before
+      width: calc(100% + 30px)
+      height: calc(100% + 30px)
+      background: url('./../../views/components/find/rec.png')
+      position: absolute
+      left: -15px
+      top: -15px
+      background-size: 100% 100%
+      +media($media-md)
+        display: none
+
   
   &_map
     width: 50%
+    flex-direction: column
+    display: flex
+    #map
+      flex: 1 0
 
   .btn
     @extend %button
@@ -52,8 +72,45 @@
       
       .btn
         margin-left: 20px
+        justify-content: center
+        align-items: center
+        display: flex
 
     &_socials
       justify-content: center
       display: flex
+
+  +media($media-sm)
+    &_contacts
+      padding: 40px 0
     
+  +media($media-md)
+    &_wrapper
+      flex-wrap: wrap
+  
+    &_contacts
+      width: 100%
+
+    &_map
+      #map
+        height: 250px!important
+        border: 1px solid $gold
+        margin-top: 20px
+
+      width: 100%
+
+
+  +media($media-xs)
+    padding-bottom: 20px
+  
+    &_contacts
+      &_buttons
+        flex-direction: column
+        margin: 20px 0
+
+        .btn
+          margin: 20px 0 0
+
+
+    &_page
+      padding: 15px 0
